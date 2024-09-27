@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College of Engineering</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #0056b3;
+            --secondary-color: #f8f9fa;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/api/placeholder/1200/400') no-repeat center center;
+            background-size: cover;
+            height: 500px;
+        }
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 1.8rem;
+            color: var(--primary-color) !important;
+        }
+        .nav-link {
+            font-weight: 500;
+        }
+        .card {
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        .btn-primary {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+        .btn-primary:hover {
+            background-color: #003d82;
+            border-color: #003d82;
+        }
+        .section-title {
+            position: relative;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+            color: var(--primary-color);
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 50px;
+            height: 3px;
+            background-color: var(--primary-color);
+        }
+        .department-img {
+            height: 200px;
+            object-fit: cover;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+        }
+        .social-icons a {
+            color: white;
+            font-size: 1.5rem;
+            margin-right: 15px;
+        }
+        .social-icons a:hover {
+            color: var(--primary-color);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#">College of Engineering</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Departments</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Research</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Admissions</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero d-flex align-items-center">
+        <div class="container text-white text-center">
+            <h1 class="display-3 fw-bold mb-4">Innovate. Create. Engineer.</h1>
+            <p class="lead mb-4">Shaping the future through cutting-edge engineering education and research</p>
+            <a href="#" class="btn btn-primary btn-lg px-5 py-3 fw-bold">Apply Now</a>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <section class="mb-5">
+            <h2 class="section-title text-center">Our Departments</h2>
+            <div class="row g-4">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="/images/electrical.jpeg" class="card-img-top department-img" alt="Electrical Engineering">
+                        <div class="card-body">
+                            <h5 class="card-title">Electrical Engineering</h5>
+                            <p class="card-text">Explore the world of electronics, power systems, and signal processing.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="/images/mechanical enginerring.jpeg" class="card-img-top department-img" alt="Mechanical Engineering">
+                        <div class="card-body">
+                            <h5 class="card-title">Mechanical Engineering</h5>
+                            <p class="card-text">Design and analyze mechanical systems, from nano-scale to large machines.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="/images/computer enginerring.avif" class="card-img-top department-img" alt="Computer Science">
+                        <div class="card-body">
+                            <h5 class="card-title">Computer Science</h5>
+                            <p class="card-text">Dive into algorithms, software engineering, and artificial intelligence.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="/images/civil engineering.jpeg" class="card-img-top department-img" alt="Civil Engineering">
+                        <div class="card-body">
+                            <h5 class="card-title">Civil Engineering</h5>
+                            <p class="card-text">Build the infrastructure of tomorrow, from bridges to smart cities.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="/images/chemical enginerring.jpg" class="card-img-top department-img" alt="Chemical Engineering">
+                        <div class="card-body">
+                            <h5 class="card-title">Chemical Engineering</h5>
+                            <p class="card-text">Transform raw materials into valuable products through chemical processes.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="/images/it enginerring.webp" class="card-img-top department-img" alt="Civil Engineering">
+                        <div class="card-body">
+                            <h5 class="card-title">IT Engineering</h5>
+                            <p class="card-text">Build the software for tomorrow </p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="row align-items-center mb-5 bg-light p-5 rounded-3">
+            <div class="col-lg-6">
+                <h2 class="section-title">Why Choose Our College of Engineering?</h2>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-primary me-2"></i>Cutting-edge research facilities</li>
+                    <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-primary me-2"></i>Industry-experienced faculty</li>
+                    <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-primary me-2"></i>Hands-on learning experiences</li>
+                    <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-primary me-2"></i>Strong industry partnerships</li>
+                    <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-primary me-2"></i>Global exchange programs</li>
+                </ul>
+            </div>
+            <div class="col-lg-6 mt-4 mt-lg-0">
+                <img src="/images/student.jpeg" class="img-fluid rounded-3 shadow" alt="Engineering Students">
+            </div>
+        </section>
+
+        <section class="text-center mb-5">
+            <h2 class="section-title">Upcoming Events</h2>
+            <div class="row g-4">
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Engineering Open House</h5>
+                            <p class="card-text">Experience our state-of-the-art labs and meet our faculty.</p>
+                            <p><strong>Date:</strong> October 15, 2024</p>
+                            <a href="#" class="btn btn-outline-primary">Register</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Innovation Summit</h5>
+                            <p class="card-text">Join industry leaders and researchers in discussing future tech trends.</p>
+                            <p><strong>Date:</strong> November 8-10, 2024</p>
+                            <a href="#" class="btn btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Hackathon 2024</h5>
+                            <p class="card-text">48-hour coding challenge to solve real-world problems.</p>
+                            <p><strong>Date:</strong> December 1-3, 2024</p>
+                            <a href="#" class="btn btn-outline-primary">Sign Up</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5>Contact Us</h5>
+                    <p>123 Engineering Ave, Techville, TV 12345<br>
+                    Phone: (555) 123-4567<br>
+                    Email: info@engineeringcollege.edu</p>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Privacy Policy</a></li>
+                        <li><a href="#" class="text-white">Terms of Use</a></li>
+                        <li><a href="#" class="text-white">Career Opportunities</a></li>
+                        <li><a href="#" class="text-white">Alumni Relations</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Connect With Us</h5>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="mt-4 bg-light">
+            <div class="text-center mt-4">
+                <small>&copy; 2024 College of Engineering. All rights reserved.</small>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
